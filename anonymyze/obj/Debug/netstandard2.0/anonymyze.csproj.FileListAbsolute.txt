@@ -1,0 +1,15 @@
+C:\Users\James\source\repos\anonymyze\anonymyze\anonymyze\bin\Debug\netstandard2.0\anonymyze.deps.json
+C:\Users\James\source\repos\anonymyze\anonymyze\anonymyze\bin\Debug\netstandard2.0\anonymyze.dll
+C:\Users\James\source\repos\anonymyze\anonymyze\anonymyze\bin\Debug\netstandard2.0\ref\anonymyze.dll
+C:\Users\James\source\repos\anonymyze\anonymyze\anonymyze\bin\Debug\netstandard2.0\anonymyze.pdb
+C:\Users\James\source\repos\anonymyze\anonymyze\anonymyze\obj\Debug\netstandard2.0\anonymyze.csproj.AssemblyReference.cache
+C:\Users\James\source\repos\anonymyze\anonymyze\anonymyze\obj\Debug\netstandard2.0\anonymyze.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\James\source\repos\anonymyze\anonymyze\anonymyze\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\James\source\repos\anonymyze\anonymyze\anonymyze\obj\Debug\netstandard2.0\anonymyze.AssemblyInfoInputs.cache
+C:\Users\James\source\repos\anonymyze\anonymyze\anonymyze\obj\Debug\netstandard2.0\anonymyze.AssemblyInfo.cs
+C:\Users\James\source\repos\anonymyze\anonymyze\anonymyze\obj\Debug\netstandard2.0\anonymyze.csproj.CoreCompileInputs.cache
+C:\Users\James\source\repos\anonymyze\anonymyze\anonymyze\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\James\source\repos\anonymyze\anonymyze\anonymyze\obj\Debug\netstandard2.0\anonymyze.dll
+C:\Users\James\source\repos\anonymyze\anonymyze\anonymyze\obj\Debug\netstandard2.0\ref\anonymyze.dll
+C:\Users\James\source\repos\anonymyze\anonymyze\anonymyze\obj\Debug\netstandard2.0\anonymyze.pdb
+C:\Users\James\source\repos\anonymyze\anonymyze\anonymyze\obj\Debug\netstandard2.0\HomeScreen.xaml.g.cs
