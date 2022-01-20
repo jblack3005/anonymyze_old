@@ -18,6 +18,7 @@ namespace anonymyze.Pages
         {
             (sender as Button).IsEnabled = false;
 
+            // gets photo from camera roll and decodes it to bitmap then sends it to edit image
             Stream stream = await DependencyService.Get<IPhotoPickerService>().GetImageStreamAsync();
             if (stream != null)
             {

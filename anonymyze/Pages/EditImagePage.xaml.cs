@@ -10,34 +10,37 @@ namespace anonymyze.Pages
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class EditImagePage : ContentPage
     {
-        SKBitmap imageBitmap;
+        SKBitmap blurredBitmap;
         public EditImagePage(SKBitmap inputImageSource)
         {
             InitializeComponent();
 
-            imageBitmap = inputImageSource;
-
             // https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/graphics/skiasharp/bitmaps/drawing
-            using (SKCanvas canvas = new SKCanvas(inputImageSource))
+
+            SKBitmap imageBitmap = inputImageSource;
+            SKBitmap blurBitmap = new SKBitmap(9, 9);
+
+            // creates blur rectangle
+            using (SKCanvas canvas = new SKCanvas(blurBitmap))
             {
-                using(SKPaint paint = new SKPaint())
-                {
-                    paint.Style = SKPaintStyle.Stroke;
-                    paint.Color = SKColors.Black;
-                    paint.StrokeWidth = 60;
-                    paint.StrokeCap = SKStrokeCap.Round;
+                canvas.Clear();
+                canvas.DrawBitmap(imageBitmap,
+                                  new SKRect(112, 238, 184, 310),   // source
+                                  new SKRect(0, 0, 9, 9));          // destination
 
-                    using (SKPath path = new SKPath())
-                    {
-                        path.MoveTo(380, 390);
-                        path.CubicTo(560, 390, 560, 280, 500, 280);
+            }
 
-                        path.MoveTo(320, 390);
-                        path.CubicTo(140, 390, 140, 280, 200, 280);
+            // Create full-sized bitmap on canvas and places blur on top
+            blurredBitmap = new SKBitmap(imageBitmap.Width, imageBitmap.Height);
 
-                        canvas.DrawPath(path, paint);
-                    }
-                }
+            using (SKCanvas canvas = new SKCanvas(blurredBitmap))
+            {
+                canvas.Clear();
+
+                canvas.DrawBitmap(imageBitmap, new SKPoint());
+
+                canvas.DrawBitmap(blurBitmap,
+                                  new SKRect(112, 238, 184, 310));  // destination
             }
 
             // Create SKCanvasView to view result
@@ -52,7 +55,15 @@ namespace anonymyze.Pages
             SKCanvas canvas = surface.Canvas;
 
             canvas.Clear();
-            canvas.DrawBitmap(imageBitmap, info.Rect);
+            canvas.DrawBitmap(blurredBitmap, info.Rect);
+        }
+
+        void OnSaveButtonClicked(object sender, SKPaintSurfaceEventArgs args)
+        {
+            SKSurface surface = args.Surface;
+
+            SKImage mainCanvasImage = surface.Snapshot();
+            SKBitmap canvasBitmap = SKBitmap.Decode(mainCanvasImage.Encode());
         }
     }
 }
