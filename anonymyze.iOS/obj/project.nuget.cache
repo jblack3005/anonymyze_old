@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "+xatNvW5Qd/tHr+z3JDYOgFD5w6DPqef8b7xW7ioPfA85YwdSZ5Wb3tWODpx/ZNl6yYXw5sZ4aUIuQL+Hr/S7w==",
+  "dgSpecHash": "2a3DTVtyUrT0xStBkxah5iai+y83HXN/MXjS21zKyf5FYtX4btil6/TbvMoTu/22OHA2b3nq8FmIEEKnX5zGgg==",
   "success": true,
   "projectFilePath": "C:\\Users\\James\\source\\repos\\anonymyze\\anonymyze\\anonymyze.iOS\\anonymyze.iOS.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\James\\.nuget\\packages\\skiasharp\\2.80.3\\skiasharp.2.80.3.nupkg.sha512",
+    "C:\\Users\\James\\.nuget\\packages\\skiasharp.views\\2.80.3\\skiasharp.views.2.80.3.nupkg.sha512",
+    "C:\\Users\\James\\.nuget\\packages\\skiasharp.views.forms\\2.80.3\\skiasharp.views.forms.2.80.3.nupkg.sha512",
     "C:\\Users\\James\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.6.1\\xamarin.essentials.1.6.1.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512"

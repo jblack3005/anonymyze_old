@@ -1,5 +1,8 @@
 C:\Users\James\source\repos\anonymyze\anonymyze\anonymyze.iOS\bin\iPhone\Debug\anonymyze.iOS.exe
 C:\Users\James\source\repos\anonymyze\anonymyze\anonymyze.iOS\bin\iPhone\Debug\anonymyze.iOS.pdb
+C:\Users\James\source\repos\anonymyze\anonymyze\anonymyze.iOS\bin\iPhone\Debug\SkiaSharp.dll
+C:\Users\James\source\repos\anonymyze\anonymyze\anonymyze.iOS\bin\iPhone\Debug\SkiaSharp.Views.iOS.dll
+C:\Users\James\source\repos\anonymyze\anonymyze\anonymyze.iOS\bin\iPhone\Debug\SkiaSharp.Views.Forms.dll
 C:\Users\James\source\repos\anonymyze\anonymyze\anonymyze.iOS\bin\iPhone\Debug\Xamarin.Essentials.dll
 C:\Users\James\source\repos\anonymyze\anonymyze\anonymyze.iOS\bin\iPhone\Debug\Xamarin.Essentials.pdb
 C:\Users\James\source\repos\anonymyze\anonymyze\anonymyze.iOS\bin\iPhone\Debug\Xamarin.Forms.Core.dll

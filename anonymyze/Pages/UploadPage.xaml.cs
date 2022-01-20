@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SkiaSharp;
+using System;
 using System.IO;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -20,7 +21,7 @@ namespace anonymyze.Pages
             Stream stream = await DependencyService.Get<IPhotoPickerService>().GetImageStreamAsync();
             if (stream != null)
             {
-                await Navigation.PushAsync(new EditImagePage(ImageSource.FromStream(() => stream)));
+                await Navigation.PushAsync(new EditImagePage(SKBitmap.Decode(stream)));
             }
 
             (sender as Button).IsEnabled = true;

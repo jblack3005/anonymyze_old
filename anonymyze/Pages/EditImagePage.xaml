@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:skia="clr-namespace:SkiaSharp.Views.Forms;assembly=SkiaSharp.Views.Forms"
              x:Class="anonymyze.Pages.EditImagePage">
     <ContentPage.Content>
         <Grid BackgroundColor="DarkSlateGray">
@@ -40,12 +40,12 @@
                     BackgroundColor="DarkRed"
                     TextColor="White"></Button>
             <!-- Image -->
-            <Image x:Name="image"
-                   Grid.Row="2"
-                   Grid.Column="0"
-                   Grid.RowSpan="7"
-                   Grid.ColumnSpan="4"
-                   BackgroundColor="White"></Image>
+            <skia:SKCanvasView x:Name="canvasView"
+                               PaintSurface="OnCanvasViewPaintSurface"
+                               Grid.Row="2"
+                               Grid.Column="0"
+                               Grid.RowSpan="7"
+                               Grid.ColumnSpan="4"/>
             <!-- Edit tools -->
             <Button Text="Blur"
                     Grid.Row="9"
