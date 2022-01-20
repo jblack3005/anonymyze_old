@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="anonymyze.Pages.UploadPage">
+    <ContentPage.Content>
+        <Grid BackgroundColor="DarkSlateGray"
+              Padding="20, 20, 20, 20">
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <!-- Title -->
+            <Label Text="anonymyze."
+                   Grid.Column="0"
+                   Grid.Row="0"
+                   Grid.ColumnSpan="3"
+                   Grid.RowSpan="2"
+                   BackgroundColor="Black"
+                   TextColor="White"
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center"></Label>
+            <!-- Upload Image Button -->
+            <Button Text="Upload Image"
+                    Grid.Row="5"
+                    Grid.Column="1"
+                    Grid.RowSpan="2"
+                    BackgroundColor="DarkRed"
+                    TextColor="White"
+                    Clicked="OnImageButtonClicked"></Button>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="anonymyze.Pages.EditImagePage">
+    <ContentPage.Content>
+        <Grid BackgroundColor="DarkSlateGray">
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <!-- Navigation -->
+            <Button Text="Save Image"
+                    Grid.Column="1"
+                    Grid.ColumnSpan="2"
+                    BackgroundColor="Black"
+                    TextColor="White"></Button>
+            <!-- Undo and Redo -->
+            <Button Text="Undo"
+                    Grid.Row="1"
+                    Grid.Column="1"
+                    BackgroundColor="DarkRed"
+                    TextColor="White"></Button>
+            <Button Text="Redo"
+                    Grid.Row="1"
+                    Grid.Column="2"
+                    BackgroundColor="DarkRed"
+                    TextColor="White"></Button>
+            <!-- Image -->
+            <Image x:Name="image"
+                   Grid.Row="2"
+                   Grid.Column="0"
+                   Grid.RowSpan="7"
+                   Grid.ColumnSpan="4"
+                   BackgroundColor="White"></Image>
+            <!-- Edit tools -->
+            <Button Text="Blur"
+                    Grid.Row="9"
+                    BackgroundColor="DarkRed"
+                    TextColor="White"></Button>
+            <Button Text="Erase"
+                    Grid.Row="9"
+                    Grid.Column="1"
+            BackgroundColor="DarkRed"
+                    TextColor="White"></Button>
+            <Button Text="Style"
+                    Grid.Row="9"
+                    Grid.Column="2"
+                    BackgroundColor="DarkRed"
+                    TextColor="White"></Button>
+            <Button Text="Brush"
+                    Grid.Row="9"
+                    Grid.Column="3"
+                    BackgroundColor="DarkRed"
+                    TextColor="White"></Button>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

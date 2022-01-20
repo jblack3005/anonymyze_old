@@ -8,17 +8,17 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("anonymyze.Page1.xaml", "Page1.xaml", typeof(global::anonymyze.Page1))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("anonymyze.Pages.UploadPage.xaml", "Pages/UploadPage.xaml", typeof(global::anonymyze.Pages.UploadPage))]
 
-namespace anonymyze {
+namespace anonymyze.Pages {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Page1.xaml")]
-    public partial class Page1 : global::Xamarin.Forms.ContentPage {
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Pages\\UploadPage.xaml")]
+    public partial class UploadPage : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
-            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(Page1));
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(UploadPage));
         }
     }
 }

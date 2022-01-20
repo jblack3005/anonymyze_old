@@ -11,21 +11,7 @@ namespace anonymyze
 
         public MainPage()
         {
-            this.Padding = new Thickness(20, 20, 20, 20);
-
-            StackLayout panel = new StackLayout
-            {
-                Spacing = 15
-            };
-
-            panel.Children.Add(uploadButton = new Button
-            {
-                Text = "Upload",
-                IsEnabled = false,
-            });
-
-            uploadButton.Clicked += OnUpload;
-            this.Content = panel;
+            Application.Current.MainPage = new Pages.UploadPage();
         }
 
         private void OnUpload(object sender, EventArgs e)
